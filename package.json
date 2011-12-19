@@ -1,0 +1,22 @@
+{
+    "name":"shortid",
+    "version":"1.0.0",
+    "description":"Short unique id generator. Url-friendly. Non-predictable. Cluster-compatible.",
+    "keywords": ["short", "tiny", "id", "uuid", "bitly", "shorten", "mongoid"],
+    "homepage":"http://doodleordie.com",
+    "author":"Dylan Greene <dylang@gmail.com>",
+    "dependencies":{
+    },
+    "devDependencies":{
+        "logging":"*",
+        "mocha":"*"
+    },
+    "main":"index",
+    "engines":{
+        "node":">=0.6"
+    },
+    "scripts":{
+        "start":"node cluster",
+        "test": "nodeunit test"
+    }
+}
