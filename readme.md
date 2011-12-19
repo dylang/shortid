@@ -1,13 +1,16 @@
-# ShortId [![Build Status](https://secure.travis-ci.org/dylang/Shortid.png)](http://travis-ci.org/dylang/Shortid)
+# ShortId [![Build Status](https://secure.travis-ci.org/dylang/shortid.png)](http://travis-ci.org/dylang/shortid)
 
-ShortId is a tiny id generator good for creating guarenteed unique ids that are easier to use in urls and for sharing than UUID's.
+ShortId creates amazingly short non-sequential url-friendly unique ids.  Perfect for url shorteners, MongoDB and Reddis ids, and any other id users might see.
 
-* 8-12 characters
+* 7-12 url-friendly characters: A-Za-z_-
 * Non-sequential so they are not predictable.
-* Random alphabet based on a seed you provide so others can't decrypt them.
+* Shuffled alphabet based on an optional seed you provide so others can't decrypt your ids.
 * Includes version in case you want to change how you encode your id.
-* Includes cluster worker id so you can use this on multi-processor server instances.
-* Includes tests that run on Mocha.
+* Includes cluster worker id so you can use on node instances running using Cluster.
+* Includes tests that run on [Mocha](http://visionmedia.github.com/mocha/).
+* Requires Node 0.6 because it uses Node's new crypto functions.
+
+## Example
 
 ```javascript
     var ShortId = require('../index');
@@ -29,12 +32,13 @@ ShortId is a tiny id generator good for creating guarenteed unique ids that are 
     PTxG9hD
 ```
 
-## ShortId.generate()
+## API
 
-Returns an id.
+### ShortId.generate()
 
+Returns an amazingly short non-sequential unique id.
 
-## Other functions
+### Other functions
 
 (Full docs coming soon.)
 

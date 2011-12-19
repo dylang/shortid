@@ -1,9 +1,9 @@
 {
     "name":"shortid",
-    "version":"1.0.2",
-    "description":"Short unique id generator. Url-friendly. Non-predictable. Cluster-compatible.",
+    "version":"1.0.3",
+    "description":"Amazingly short non-sequential url-friendly unique id generator.",
     "keywords": ["short", "tiny", "id", "uuid", "bitly", "shorten", "mongoid", "shortid", "tinyid", "id"],
-    "homepage":"http://doodleordie.com",
+    "homepage":"http://github.com/dylang/shortid",
     "author":"Dylan Greene <dylang@gmail.com>",
     "repository":
     {
