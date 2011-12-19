@@ -9,11 +9,38 @@ ShortId is a tiny id generator good for creating guarenteed unique ids that are 
 * Includes cluster worker id so you can use this on multi-processor server instances.
 * Includes tests that run on Mocha.
 
-## ShortId.generate() returns id
+```javascript
+    var ShortId = require('../index');
+    var i = 10;
+    while (i--) {
+        console.log(ShortId.generate());
+    }
+    
+    // Resulting ids:
+    PPBqWA9
+    PefBO4A
+    eV9B94A
+    eemGO4d
+    PPGBqhd
+    VPyX9hw
+    eeDX94w
+    PT7GOWA
+    PP4XqWA
+    PTxG9hD
+```
 
-Other functions (docs coming soon)
+## ShortId.generate()
 
-* ShortId.version(int) sets version, returns ShortId
-* ShortId.worker(int) sets cluster worker, returns ShortId
+Returns an id.
+
+
+## Other functions
+
+(Full docs coming soon.)
+
+* ShortId.version(int) sets version, returns ShortId module.
+* ShortId.worker(int) sets cluster worker, returns ShortId module.
 
 See the tests for more examples.
+
+Created for Node Knockout 2011 winner [Doodle Or Die](http://doodleordie.com).
