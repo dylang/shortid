@@ -1,10 +1,20 @@
 {
     "name":"shortid",
-    "version":"1.0.0",
+    "version":"1.0.1",
     "description":"Short unique id generator. Url-friendly. Non-predictable. Cluster-compatible.",
-    "keywords": ["short", "tiny", "id", "uuid", "bitly", "shorten", "mongoid"],
+    "keywords": ["short", "tiny", "id", "uuid", "bitly", "shorten", "mongoid", "shortid", "tinyid", "id"],
     "homepage":"http://doodleordie.com",
     "author":"Dylan Greene <dylang@gmail.com>",
+    "repository":
+    {
+        "type": "git",
+        "url": "http://github.com/dylang/shortid"
+    },
+    "bugs":
+    {
+        "mail": "dylang@gmail.com",
+        "url": "http://github.com/dylang/sgortid/issues"
+    },
     "dependencies":{
     },
     "devDependencies":{
@@ -18,5 +28,9 @@
     "scripts":{
         "start":"node cluster",
         "test": "nodeunit test"
-    }
+    },
+    "licenses" :
+    [
+        { "type" : "MIT", "url" : "http://github.com/isaacs/npm/raw/master/LICENSE" }
+    ]
 }
