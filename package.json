@@ -1,6 +1,6 @@
 {
     "name":"shortid",
-    "version":"1.0.7",
+    "version":"1.0.8",
     "description":"Amazingly short non-sequential url-friendly unique id generator.",
     "keywords": ["short", "tiny", "id", "uuid", "bitly", "shorten", "mongoid", "shortid", "tinyid", "id"],
     "homepage":"http://github.com/dylang/shortid",
