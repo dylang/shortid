@@ -1,35 +1,44 @@
 {
-    "name":"shortid",
-    "version":"1.0.8",
-    "description":"Amazingly short non-sequential url-friendly unique id generator.",
-    "keywords": ["short", "tiny", "id", "uuid", "bitly", "shorten", "mongoid", "shortid", "tinyid", "id"],
-    "homepage":"http://github.com/dylang/shortid",
-    "author":"Dylan Greene <dylang@gmail.com>",
-    "repository":
+  "name": "shortid",
+  "version": "2.0.0",
+  "description": "Amazingly short non-sequential url-friendly unique id generator.",
+  "keywords": [
+    "short",
+    "tiny",
+    "id",
+    "uuid",
+    "bitly",
+    "shorten",
+    "mongoid",
+    "shortid",
+    "tinyid"
+  ],
+  "homepage": "http://github.com/dylang/shortid",
+  "author": "Dylan Greene <dylang@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/dylang/shortid"
+  },
+  "bugs": {
+    "mail": "dylang@gmail.com",
+    "url": "http://github.com/dylang/shortid/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "~1.7.2",
+    "mocha": "~1.12.0"
+  },
+  "main": "shortid.js",
+  "engines": {
+    "node": ">=0.8.x"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "licenses": [
     {
-        "type": "git",
-        "url": "http://github.com/dylang/shortid"
-    },
-    "bugs":
-    {
-        "mail": "dylang@gmail.com",
-        "url": "http://github.com/dylang/shortid/issues"
-    },
-    "dependencies":{
-    },
-    "devDependencies":{
-        "logging":"*",
-        "mocha":"*"
-    },
-    "main":"index",
-    "engines":{
-        "node":">=0.4.x"
-    },
-    "scripts":{
-        "test": "make test"
-    },
-    "licenses" :
-    [
-        { "type" : "MIT", "url" : "http://github.com/isaacs/npm/raw/master/LICENSE" }
-    ]
+      "type": "MIT",
+      "url": "https://raw.github.com/dylang/shortid/master/LICENSE"
+    }
+  ]
 }

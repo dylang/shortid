@@ -1,8 +1,8 @@
-var ShortId = require('../index');
+var shortId = require('../shortid');
 
 //Generate 10 ids
 
 var i = 10;
 while (i--) {
-    console.log(ShortId.generate());
+    console.log(shortId.generate());
 }
