@@ -29,6 +29,15 @@ describe('testing shortid', function(done) {
         shortId.worker(0);
         expect(shortId.decode(shortId()).worker).to.equal(0);
 
+        shortId.worker(1);
+        expect(shortId.decode(shortId()).worker).to.equal(1);
+
+        shortId.worker(2);
+        expect(shortId.decode(shortId()).worker).to.equal(2);
+
+        shortId.worker(3);
+        expect(shortId.decode(shortId()).worker).to.equal(3);
+
         shortId.worker(15);
         expect(shortId.decode(shortId()).worker).to.equal(15);
 

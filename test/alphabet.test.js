@@ -3,21 +3,38 @@ var expect = require('chai').expect;
 
 describe('testing shortid', function(done) {
 
+    beforeEach(function(){
+        alphabet.seed(1);
+    });
+
+
     it('should create a unique random alphabet with each seed', function(done) {
         alphabet.seed(1);
-        expect(alphabet.shuffled()).to.equal('egQDZqEk8yt60UbGX59WIzf7YwMp2_SrVOjmNhxc4Tau1-J3RLsFHvCKiBdoPnAl');
+        expect(alphabet.shuffled()).to.equal('ylZM7VHLvOFcohp01x-fXNr8P_tqin6RkgWGm4SIDdK5s2TAJebzQEBUwuY9j3aC');
 
         alphabet.seed(1234);
-        expect(alphabet.shuffled()).to.equal('DZFje6Q0nYCavViEkGlPWxNIL-bpHMATJR_quy74gwc35of2mB1KdOsXUr8St9hz');
+        expect(alphabet.shuffled()).to.equal('ef4w9iMboqLOQdWu3hKI72A0VZpCtzDlXk5_a6cFSNYGnH-gmsP1UBxvTRJjE8ry');
         done();
     });
 
     it('should return the same alphabet with a single seed', function(done) {
         alphabet.seed(1);
-        expect(alphabet.shuffled()).to.equal('egQDZqEk8yt60UbGX59WIzf7YwMp2_SrVOjmNhxc4Tau1-J3RLsFHvCKiBdoPnAl');
+        expect(alphabet.shuffled()).to.equal('ylZM7VHLvOFcohp01x-fXNr8P_tqin6RkgWGm4SIDdK5s2TAJebzQEBUwuY9j3aC');
 
         alphabet.seed(1);
-        expect(alphabet.shuffled()).to.equal('egQDZqEk8yt60UbGX59WIzf7YwMp2_SrVOjmNhxc4Tau1-J3RLsFHvCKiBdoPnAl');
+        expect(alphabet.shuffled()).to.equal('ylZM7VHLvOFcohp01x-fXNr8P_tqin6RkgWGm4SIDdK5s2TAJebzQEBUwuY9j3aC');
+        done();
+    });
+
+    it('should shuffle into a 64-character string of unique characters', function(done){
+        // use default character set
+        alphabet.characters(false);
+
+        // use the randomly sorted defeault set to make new set
+        alphabet.characters(alphabet.shuffled());
+
+        expect(alphabet.shuffled()).to.equal('WN3JLu5ARbdoPx_ylgC09eqvzant-8HEX1YKr7BsIhTViZUm2pcGQD4wk6jOfMFS');
+
         done();
     });
 
@@ -34,7 +51,7 @@ describe('testing shortid', function(done) {
         expect(fn('abc')).to.throw(Error, /Custom alphabet for shortId must be 64 unique characters./);
 
         alphabet.characters('①②③④⑤⑥⑦⑧⑨⑩⑪⑫ⒶⒷⒸⒹⒺⒻⒼⒽⒾⒿⓀⓁⓂⓃⓄⓅⓆⓇⓈⓉⓊⓋⓌⓍⓎⓏⓐⓑⓒⓓⓔⓕⓖⓗⓘⓙⓚⓛⓜⓝⓞⓟⓠⓡⓢⓣⓤⓥⓦⓧⓨⓩ');
-        expect(alphabet.shuffled()).to.equal('ⒸⒺⓞⓑⓧⓄⓒⒾ⑨ⓌⓇ⑦①ⓢ⑫ⓔⓥ⑥⑩ⓤⓖⓍⒹ⑧ⓦⓊⓚⓃ③ⓨⓠⓅⓣⓜⒽⓀⓛⒻⓋⒶ⑤ⓡ⑪Ⓢ②ⓩⓗ④ⓟⓙⓆⓓⓕⓉⓐⓘⒼⓏⒷⓂⓝⓁⓎⒿ');
+        expect(alphabet.shuffled()).to.equal('ⓌⒿⓧⓚ⑧ⓣⓕⓙⓉⓜⓓⒶⓂⒻⓃ①②ⓋⓩⒹⓥⓛⓅ⑨ⓝⓨⓇⓄⒼⓁ⑦ⓟⒾⒺⓤⓔⓀ⑤ⓠⓖⓑⒷⓘ⑥Ⓠ③ⓡⓎⓗⒸ⑫ⓍⓞⓒⓏⓢⓊⓈⓦ⑩Ⓗ④⑪ⓐ');
         done();
 
     });
