@@ -13,20 +13,19 @@
     "shortid",
     "tinyid"
   ],
-  "homepage": "http://github.com/dylang/shortid",
-  "author": "Dylan Greene <dylang@gmail.com>",
+  "homepage": "https://github.com/dylang/shortid",
+    "author": {
+      "name": "Dylan Greene",
+      "email": "dylang@gmail.com"
+    },
   "repository": {
     "type": "git",
-    "url": "http://github.com/dylang/shortid"
-  },
-  "bugs": {
-    "mail": "dylang@gmail.com",
-    "url": "http://github.com/dylang/shortid/issues"
+    "url": "https://github.com/dylang/shortid"
   },
   "dependencies": {},
   "devDependencies": {
-    "chai": "^1.9.1",
-    "mocha": "^1.20.1"
+    "chai": "~1.9.1",
+    "mocha": "~1.20.1"
   },
   "main": "shortid.js",
   "engines": {
