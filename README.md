@@ -7,6 +7,9 @@ ShortId creates amazingly short non-sequential url-friendly unique ids.  Perfect
  * By default 7-14 url-friendly characters: `A-Z`, `a-z`, `0-9`, `_-`
  * Non-sequential so they are not predictable.
  * Supports `cluster` (automatically), custom seeds, custom alphabet.
+ * Can generate any number of ids without duplicates, even millions per day.
+ * Perfect for games, especially if you are concerned about cheating so you don't want an easily guessable id.
+ * ShortId generation does not "restart" when you restart your app.
  * Popular replacement for Mongo ID/Mongoose ID.
  * Includes [Mocha](http://visionmedia.github.com/mocha/) tests.
 
@@ -107,7 +110,7 @@ __Optional__
 
 Change the characters used.
 
-You must provide a string of all 64 unique characters. Order is not important. 
+You must provide a string of all 64 unique characters. Order is not important.
 
 The default characters provided were selected because they are url safe.
 
@@ -131,12 +134,12 @@ shortId.alphabet('ⒶⒷⒸⒹⒺⒻⒼⒽⒾⒿⓀⓁⓂⓃⓄⓅⓆⓇⓈⓉ�
 Millions of doodles have been saved with `shortId` filenames. Every log message gets a `shortId` to make it easy
 for us to look up later.
 
-Here are some other projects that use shortid:
+Here are some other projects that use shortId:
 
 * [bevy](https://npmjs.org/package/bevy) - A simple server to manage multiple Node services.
 * [capre](https://npmjs.org/package/capre) - Cross-Server Data Replication.
 * [cordova-build](https://www.npmjs.org/package/cordova-build) - an alternative to phonegap build that runs on your servers/agents.
-* [couchdb-tools](https://www.npmjs.org/package/couchdb-tools) - A library of handy functions for use when working with CouchDB documents.                                                          
+* [couchdb-tools](https://www.npmjs.org/package/couchdb-tools) - A library of handy functions for use when working with CouchDB documents.
 * [CleverStack/clever-email](https://github.com/CleverStack/clever-email) - E-mail system for CleverStack.
 * [CloudTypes](https://github.com/ticup/CloudTypes) - JavaScript end2end implementation of the Cloud Types model for Eventual Consistency programming.
 * [dnode-tarantula](https://github.com/jutaz/dnode-tarantula) - an asynchronous rpc and event system for node.js based on dnode-protocol and TCP sockets.
@@ -146,7 +149,7 @@ Here are some other projects that use shortid:
 * [file-db](https://npmjs.org/package/file-db) - Document database that uses directories and files to store its data, supporting nested key-value objects in named collections.
 * [resume-generator](https://www.npmjs.org/package/resume-generator) - Resume Generator.
 * [riffmint](https://npmjs.org/package/riffmint) - Collaboration in musical space.
-* [rap1ds/dippa](https://github.com/rap1ds/dippa) - Dippa Editor – A web-based LaTeX editor http://dippaeditor.com
+* [rap1ds/dippa](https://github.com/rap1ds/dippa) - Dippa Editor – A web-based LaTeX editor
 
 
 - - -

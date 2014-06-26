@@ -15,7 +15,7 @@ describe('testing shortid', function(done) {
         var ids = {};
         var id;
 
-        var i=1000;
+        var i=50000;
         while(i--) {
             id = shortId.generate();
             expect(ids[id]).to.be.undefined;
