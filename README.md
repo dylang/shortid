@@ -9,7 +9,7 @@ ShortId creates amazingly short non-sequential url-friendly unique ids.  Perfect
  * Supports `cluster` (automatically), custom seeds, custom alphabet.
  * Can generate any number of ids without duplicates, even millions per day.
  * Perfect for games, especially if you are concerned about cheating so you don't want an easily guessable id.
- * ShortId generation does not "restart" when you restart your app.
+ * Apps can be restarted any number of times without any chance of repeating an id.
  * Popular replacement for Mongo ID/Mongoose ID.
  * Includes [Mocha](http://visionmedia.github.com/mocha/) tests.
 
@@ -92,7 +92,9 @@ __Optional__
 
 Choose a unique value that will seed the random number generator so users won't be able to figure out the pattern of the unique ids. Call it just once in your application before using `shortId` and always use the same value in your application.
 
-Most developers won't need to use this. If you are worried about users decrypting the id then use it as a secret value to better encrypt the id.
+Most developers won't need to use this, it's mainly for testing ShortId. 
+
+If you are worried about users somehow decrypting the id then use it as a secret value for increased encryption.
 
 __Example__
 
