@@ -18,9 +18,9 @@ describe('testing shortid', function(done) {
         var i=50000;
         while(i--) {
             id = shortId.generate();
-            expect(ids[id]).to.be.undefined;
-            expect(id).to.have.length.below(17);
-            ids[id] = 1;
+            expect(id.length).to.be.below(17);
+            ids[id] = ids[id] ? ids[id]++ : 1;
+            expect(ids[id]).to.equal(1);
         }
         done();
     });

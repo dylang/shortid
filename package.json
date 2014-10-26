@@ -2,6 +2,10 @@
   "name": "shortid",
   "version": "2.0.1",
   "description": "Amazingly short non-sequential url-friendly unique id generator.",
+  "main": "shortid.js",
+  "scripts": {
+    "test": "grunt test"
+  },
   "keywords": [
     "short",
     "tiny",
@@ -14,30 +18,27 @@
     "tinyid"
   ],
   "homepage": "https://github.com/dylang/shortid",
-    "author": {
-      "name": "Dylan Greene",
-      "email": "dylang@gmail.com"
-    },
+  "author": {
+    "name": "Dylan Greene",
+    "email": "dylang@gmail.com"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/dylang/shortid"
   },
-  "dependencies": {},
   "devDependencies": {
     "chai": "~1.9.1",
-    "mocha": "~1.20.1"
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-mocha-test": "^0.12.2",
+    "grunt-release": "^0.7.0",
+    "grunt-templates-dylang": "^1.0.1",
+    "load-grunt-tasks": "^1.0.0",
+    "mocha": "~2.0.1",
+    "time-grunt": "^1.0.0"
   },
-  "main": "shortid.js",
   "engines": {
     "node": ">=0.8.x"
   },
-  "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter spec"
-  },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://raw.github.com/dylang/shortid/master/LICENSE"
-    }
-  ]
+  "license": "MIT"
 }

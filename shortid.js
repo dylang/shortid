@@ -9,11 +9,11 @@ var alphabet = require('./lib/alphabet'),
 // Ignore all milliseconds before a certain time to reduce the size of the date entropy without sacrificing uniqueness.
 // This number should be updated every year or so to keep the generated id short.
 // To regenerate `new Date() - 0` and bump the version. Always bump the version!
-var REDUCE_TIME = 1403265799803;
+var REDUCE_TIME = 1414337829912;
 
 // don't change unless we change the algos or REDUCE_TIME
 // must be an integer and less than 16
-var version = 2;
+var version = 3;
 
 // if you are using cluster or multiple servers use this to make each instance
 // has a unique value for worker
