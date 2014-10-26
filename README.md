@@ -1,4 +1,4 @@
-## shortid  [![shortid](http://img.shields.io/npm/v/shortid.svg?style=flat-square)](https://www.npmjs.org/package/shortid)  [![shortid](http://img.shields.io/npm/dm/shortid.svg?style=flat-square)](https://www.npmjs.org/package/shortid)  [![Build Status](http://img.shields.io/travis/dylang/shortid.svg?style=flat-square)](https://github.com/dylang/shortid)
+## shortid  [![Build Status](http://img.shields.io/travis/dylang/shortid.svg?style=flat-square)](https://travis-ci.org/dylang/shortid) [![shortid](http://img.shields.io/npm/dm/shortid.svg?style=flat-square)](https://www.npmjs.org/package/shortid)
 
 > Amazingly short non-sequential url-friendly unique id generator.
 
