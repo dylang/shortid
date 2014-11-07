@@ -1,3 +1,6 @@
 /templates/
 /examples/
 /test/
+/.idea/
+.jshintrc
+.travis.yml
