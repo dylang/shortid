@@ -1,4 +1,4 @@
-var shortId = require('../shortid');
+var shortId = require('../lib/shortid');
 var expect = require('chai').expect;
 
 describe('testing shortid', function(done) {
@@ -15,7 +15,7 @@ describe('testing shortid', function(done) {
         var ids = {};
         var id;
 
-        var i=50000;
+        var i=5000;
         while(i--) {
             id = shortId.generate();
             expect(id.length).to.be.below(17);

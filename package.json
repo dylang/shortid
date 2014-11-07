@@ -2,7 +2,7 @@
   "name": "shortid",
   "version": "2.1.2",
   "description": "Amazingly short non-sequential url-friendly unique id generator.",
-  "main": "shortid.js",
+  "main": "lib/shortid.js",
   "scripts": {
     "test": "grunt test"
   },
@@ -27,7 +27,7 @@
     "url": "https://github.com/dylang/shortid"
   },
   "devDependencies": {
-    "chai": "~1.9.1",
+    "chai": "^1.9.1",
     "grunt": "^0.4.5",
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-mocha-test": "^0.12.2",
@@ -35,11 +35,7 @@
     "grunt-release": "^0.7.0",
     "grunt-templates-dylang": "^1.0.1",
     "load-grunt-tasks": "^1.0.0",
-    "mocha": "~2.0.1",
     "time-grunt": "^1.0.0"
-  },
-  "engines": {
-    "node": ">=0.8.x"
   },
   "license": "MIT"
 }
