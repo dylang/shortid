@@ -7,7 +7,10 @@ module.exports = function (grunt) {
     var derequire = require('derequire');
     var envify = require('envify/custom');
 
-    var envifyTransform = envify({NODE_UNIQUE_ID: 0})
+    var envifyTransform = envify({NODE_UNIQUE_ID: 0});
+
+    // String to be prepended to source files
+    var banner = "/*! shortId.js\n https://github.com/dylang/shortid\n Copyright (c) Dylan Greene\n License: MIT +no-false-attribs License\n*/\n";
 
     grunt.initConfig({
         browserify: {
@@ -37,6 +40,18 @@ module.exports = function (grunt) {
             }
         },
 
+        uglify: {
+            shortId: {
+                src: 'shortId.js',
+                dest: 'shortId.min.js',
+                options: {
+                    banner: banner,
+                    sourceMap: true,
+                    report: 'gzip'
+                }
+            }
+        },
+
         mochaTest: {
             notify: {
                 src: 'test/**/*.test.js',
@@ -54,8 +69,7 @@ module.exports = function (grunt) {
             all: [
                 'Gruntfile.js',
                 'lib/**/*.js',
-                'tests/**/*',
-                'examples.js'
+                'tests/*'
             ]
         }
 
@@ -63,12 +77,18 @@ module.exports = function (grunt) {
 
     require('load-grunt-tasks')(grunt);
 
+    grunt.registerTask('build', [
+        'browserify',
+        'uglify'
+    ]);
+
     grunt.registerTask('test', [
         'jshint',
         'mochaTest'
     ]);
 
     grunt.registerTask('default', [
+        'build',
         'test'
     ]);
 
