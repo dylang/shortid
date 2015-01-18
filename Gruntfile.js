@@ -13,11 +13,11 @@ module.exports = function (grunt) {
         browserify: {
             dist: {
                 src: ['lib/shortid.js'],
-                dest: 'shortid.js'
+                dest: 'shortId.js'
             },
             options: {
                 browserifyOptions: {
-                    standalone: 'generate',
+                    standalone: 'shortId',
                     transform: [envifyTransform]
                 },
                 external: ['crypto'], // Mark 'crypto' as external so browserify doesn't load its (huge) shim
