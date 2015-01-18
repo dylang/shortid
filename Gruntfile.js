@@ -45,9 +45,20 @@ module.exports = function (grunt) {
                 src: 'shortId.js',
                 dest: 'shortId.min.js',
                 options: {
-                    banner: banner,
                     sourceMap: true,
                     report: 'gzip'
+                }
+            }
+        },
+
+        concat: {
+            shortId: {
+                options: {
+                    banner: banner
+                },
+                files: {
+                    'shortId.js': ['shortId.js'],
+                    'shortId.min.js': ['shortId.min.js']
                 }
             }
         },
@@ -79,7 +90,8 @@ module.exports = function (grunt) {
 
     grunt.registerTask('build', [
         'browserify',
-        'uglify'
+        'uglify',
+        'concat'
     ]);
 
     grunt.registerTask('test', [
