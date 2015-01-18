@@ -9,5 +9,5 @@
   "undef": true,
   "boss": true,
   "eqnull": true,
-  "node": true
+  "browserify": true
 }
