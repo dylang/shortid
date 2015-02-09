@@ -101,9 +101,22 @@ module.exports = {
 var randomNum;
 
 // Browser test
-if(typeof window !== 'undefined') { // Browser
+var hasCrypto = true;
+if(typeof window !== 'undefined') {
+    hasCrypto = false;
+}
+else {
+    try {
+        _dereq_.resolve('crypto');
+    } catch(e) {
+        hasCrypto = false;
+    }
+}
+
+// Load the appropriate function
+if(!hasCrypto) { // Browser or other JS runtimes without crypto
     // Test if Web Crypto API is available
-    if( (window.crypto && window.crypto.getRandomValues) || (window.msCrypto && window.msCrypto.getRandomValues) ) {
+    if( typeof window !== 'undefined' && ((window.crypto && window.crypto.getRandomValues) || (window.msCrypto && window.msCrypto.getRandomValues)) ) {
         var cryptoObj = window.crypto || window.msCrypto; // IE 11 uses window.msCrypto
         randomNum = function() {
             var dest = new Uint8Array(1);
