@@ -1,10 +1,9 @@
 ## Usage
 
 ```js
-var shortId = require('shortid');
+var shortid = require('shortid');
 
-console.log(shortId.generate());
-
+console.log(shortid.generate());
 //PPBqWA9
 ```
 
@@ -13,6 +12,6 @@ Mongoose Unique Id
 _id: {
     type: String,
     unique: true,
-    'default': shortId.generate
+    'default': shortid.generate
 },
 ```

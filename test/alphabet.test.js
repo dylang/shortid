@@ -1,7 +1,9 @@
+'use strict';
+
 var alphabet = require('../lib/alphabet');
 var expect = require('chai').expect;
 
-describe('testing shortid', function(done) {
+describe('testing alphabet', function(done) {
 
     beforeEach(function(){
         alphabet.seed(1);
@@ -30,7 +32,7 @@ describe('testing shortid', function(done) {
         // use default character set
         alphabet.characters(false);
 
-        // use the randomly sorted defeault set to make new set
+        // use the randomly sorted default set to make new set
         alphabet.characters(alphabet.shuffled());
 
         expect(alphabet.shuffled()).to.equal('WN3JLu5ARbdoPx_ylgC09eqvzant-8HEX1YKr7BsIhTViZUm2pcGQD4wk6jOfMFS');
@@ -47,8 +49,8 @@ describe('testing shortid', function(done) {
             };
         };
 
-        expect(fn('-‾zʎxʍʌnʇsɹbdouɯlʞɾıɥƃɟǝpɔqɐzʎxʍʌnʇsɹbdouɯlʞɾıɥƃɟǝpɔqɐ9876543210')).to.throw(Error, 'Custom alphabet for shortId must be 64 unique characters. These characters were not unique: z, ʎ, x, ʍ, ʌ, n, ʇ, s, ɹ, b, d, o, u, ɯ, l, ʞ, ɾ, ı, ɥ, ƃ, ɟ, ǝ, p, ɔ, q, ɐ');
-        expect(fn('abc')).to.throw(Error, /Custom alphabet for shortId must be 64 unique characters./);
+        expect(fn('-‾zʎxʍʌnʇsɹbdouɯlʞɾıɥƃɟǝpɔqɐzʎxʍʌnʇsɹbdouɯlʞɾıɥƃɟǝpɔqɐ9876543210')).to.throw(Error, 'Custom alphabet for shortid must be 64 unique characters. These characters were not unique: z, ʎ, x, ʍ, ʌ, n, ʇ, s, ɹ, b, d, o, u, ɯ, l, ʞ, ɾ, ı, ɥ, ƃ, ɟ, ǝ, p, ɔ, q, ɐ');
+        expect(fn('abc')).to.throw(Error, /Custom alphabet for shortid must be 64 unique characters./);
 
         alphabet.characters('①②③④⑤⑥⑦⑧⑨⑩⑪⑫ⒶⒷⒸⒹⒺⒻⒼⒽⒾⒿⓀⓁⓂⓃⓄⓅⓆⓇⓈⓉⓊⓋⓌⓍⓎⓏⓐⓑⓒⓓⓔⓕⓖⓗⓘⓙⓚⓛⓜⓝⓞⓟⓠⓡⓢⓣⓤⓥⓦⓧⓨⓩ');
         expect(alphabet.shuffled()).to.equal('ⓌⒿⓧⓚ⑧ⓣⓕⓙⓉⓜⓓⒶⓂⒻⓃ①②ⓋⓩⒹⓥⓛⓅ⑨ⓝⓨⓇⓄⒼⓁ⑦ⓟⒾⒺⓤⓔⓀ⑤ⓠⓖⓑⒷⓘ⑥Ⓠ③ⓡⓎⓗⒸ⑫ⓍⓞⓒⓏⓢⓊⓈⓦ⑩Ⓗ④⑪ⓐ');

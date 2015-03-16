@@ -1,8 +1,8 @@
 {
   "name": "shortid",
-  "version": "2.1.3",
+  "version": "2.2.0",
   "description": "Amazingly short non-sequential url-friendly unique id generator.",
-  "main": "lib/shortid.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "grunt test"
   },
@@ -24,23 +24,30 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dylang/shortid"
+    "url": "https://github.com/dylang/shortid.git"
+  },
+  "browser": {
+    "./lib/util/cluster-worker-id.js": "./lib/util/cluster-worker-id-browser.js",
+    "./lib/random/random-byte.js": "./lib/random/random-byte-browser.js"
   },
   "devDependencies": {
-    "chai": "^1.9.1",
-    "derequire": "^1.2.0",
-    "envify": "^3.2.0",
+    "chai": "^2.1.1",
+    "envify": "^3.3.1",
     "grunt": "^0.4.5",
-    "grunt-browserify": "^3.3.0",
-    "grunt-contrib-concat": "^0.5.0",
-    "grunt-contrib-jshint": "^0.10.0",
-    "grunt-contrib-uglify": "^0.7.0",
-    "grunt-mocha-test": "^0.12.2",
+    "grunt-browserify": "^3.5.0",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-contrib-uglify": "^0.8.0",
+    "grunt-mocha-test": "^0.12.7",
     "grunt-notify": "^0.4.1",
-    "grunt-release": "^0.7.0",
-    "grunt-templates-dylang": "^1.0.1",
-    "load-grunt-tasks": "^1.0.0",
-    "time-grunt": "^1.0.0"
+    "grunt-open": "^0.2.3",
+    "grunt-release": "^0.11.0",
+    "grunt-templates-dylang": "^1.0.10",
+    "load-grunt-tasks": "^3.1.0",
+    "time-grunt": "^1.1.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "mocha": "^2.2.1"
+  }
 }

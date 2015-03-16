@@ -1,23 +1,25 @@
-var shortId = require('../lib/shortid');
+'use strict';
+
+var shortid = require('..');
 var expect = require('chai').expect;
 
 describe('testing shortid', function(done) {
 
     beforeEach(function(){
         // reset to default alphabet
-        shortId.seed(1);
-        shortId.characters(false);
+        shortid.seed(1);
+        shortid.characters(false);
     });
 
 
     it('should run a bunch and never get duplicates', function(done) {
-        shortId.seed(1);
+        shortid.seed(1);
         var ids = {};
         var id;
 
         var i=5000;
         while(i--) {
-            id = shortId.generate();
+            id = shortid.generate();
             expect(id.length).to.be.below(17);
             ids[id] = ids[id] ? ids[id]++ : 1;
             expect(ids[id]).to.equal(1);
@@ -26,20 +28,20 @@ describe('testing shortid', function(done) {
     });
 
     it('should decode worker', function(done){
-        shortId.worker(0);
-        expect(shortId.decode(shortId()).worker).to.equal(0);
+        shortid.worker(0);
+        expect(shortid.decode(shortid()).worker).to.equal(0);
 
-        shortId.worker(1);
-        expect(shortId.decode(shortId()).worker).to.equal(1);
+        shortid.worker(1);
+        expect(shortid.decode(shortid()).worker).to.equal(1);
 
-        shortId.worker(2);
-        expect(shortId.decode(shortId()).worker).to.equal(2);
+        shortid.worker(2);
+        expect(shortid.decode(shortid()).worker).to.equal(2);
 
-        shortId.worker(3);
-        expect(shortId.decode(shortId()).worker).to.equal(3);
+        shortid.worker(3);
+        expect(shortid.decode(shortid()).worker).to.equal(3);
 
-        shortId.worker(15);
-        expect(shortId.decode(shortId()).worker).to.equal(15);
+        shortid.worker(15);
+        expect(shortid.decode(shortid()).worker).to.equal(15);
 
         done();
     });

@@ -1,4 +1,4 @@
-var shortId = require('../shortid');
+var shortId = require('..');
 
 //Generate 10 ids
 

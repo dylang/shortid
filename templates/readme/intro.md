@@ -7,4 +7,5 @@ ShortId creates amazingly short non-sequential url-friendly unique ids.  Perfect
  * Perfect for games, especially if you are concerned about cheating so you don't want an easily guessable id.
  * Apps can be restarted any number of times without any chance of repeating an id.
  * Popular replacement for Mongo ID/Mongoose ID.
+ * Works in Node, io.js, and web browsers.
  * Includes [Mocha](http://visionmedia.github.com/mocha/) tests.
