@@ -31,23 +31,21 @@
     "./lib/random/random-byte.js": "./lib/random/random-byte-browser.js"
   },
   "devDependencies": {
-    "chai": "^2.1.1",
-    "envify": "^3.3.1",
+    "chai": "^2.2.0",
+    "envify": "^3.4.0",
     "grunt": "^0.4.5",
-    "grunt-browserify": "^3.5.0",
+    "grunt-browserify": "^3.6.0",
     "grunt-contrib-concat": "^0.5.1",
-    "grunt-contrib-jshint": "^0.11.0",
-    "grunt-contrib-uglify": "^0.8.0",
+    "grunt-contrib-jshint": "^0.11.1",
+    "grunt-contrib-uglify": "^0.8.1",
     "grunt-mocha-test": "^0.12.7",
     "grunt-notify": "^0.4.1",
     "grunt-open": "^0.2.3",
-    "grunt-release": "^0.11.0",
+    "grunt-release": "^0.12.0",
     "grunt-templates-dylang": "^1.0.10",
     "load-grunt-tasks": "^3.1.0",
+    "mocha": "^2.2.1",
     "time-grunt": "^1.1.0"
   },
-  "license": "MIT",
-  "dependencies": {
-    "mocha": "^2.2.1"
-  }
+  "license": "MIT"
 }
