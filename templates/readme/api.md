@@ -39,7 +39,7 @@ The default characters provided were selected because they are url safe.
 __Example__
 
 ```js
-// use $ and @ instead of - an _
+// use $ and @ instead of - and _
 shortid.characters('0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ$@');
 ```
 
