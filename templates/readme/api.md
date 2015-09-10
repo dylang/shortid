@@ -86,7 +86,7 @@ if both are generated in the exact same second and are generating the same numbe
 __Example__
 
 ```js
-shortId.seed(1000);
+shortId.worker(3);
 ```
 
 ---------------------------------------
