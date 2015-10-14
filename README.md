@@ -9,7 +9,7 @@
 
 
 
-ShortId creates amazingly short non-sequential url-friendly unique ids.  Perfect for url shorteners, MongoDB and Reddis ids, and any other id users might see.
+ShortId creates amazingly short non-sequential url-friendly unique ids.  Perfect for url shorteners, MongoDB and Redis ids, and any other id users might see.
 
  * By default 7-14 url-friendly characters: `A-Z`, `a-z`, `0-9`, `_-`
  * Non-sequential so they are not predictable.
