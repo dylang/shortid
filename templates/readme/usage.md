@@ -11,7 +11,6 @@ Mongoose Unique Id
 ```js
 _id: {
     type: String,
-    unique: true,
     'default': shortid.generate
 },
 ```
