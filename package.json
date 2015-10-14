@@ -49,5 +49,8 @@
     "mocha": "^2.3.3",
     "time-grunt": "^1.2.1"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "grunt-cli": "^0.1.13"
+  }
 }
