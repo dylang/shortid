@@ -183,7 +183,7 @@ __Recommendation:__ You typically won't want to change this.
 __Optional__
 
 If you are running multiple server processes then you should make sure every one has a unique `worker` id. Should be an integer between 0 and 16. 
-If you do not do this there is very little chance of two servers generating the same id, but it is technically possible 
+If you do not do this there is very little chance of two servers generating the same id, but it is theatrically possible 
 if both are generated in the exact same second and are generating the same number of ids that second and a half-dozen random numbers are all exactly the same. 
 
 __Example__
@@ -194,7 +194,7 @@ shortid.worker(1);
 
 ---------------------------------------
 
-#### `shortid.seed(float)`
+#### `shortid.seed(integer)`
 
 __Default:__ `1`
 
@@ -250,6 +250,6 @@ Released under the [MIT license](https://tldrlegal.com/license/mit-license).
 Screenshots are [CC BY-SA](http://creativecommons.org/licenses/by-sa/4.0/) (Attribution-ShareAlike).
 
 ***
-_Generated using [grunt-readme](https://github.com/assemble/grunt-readme) with [grunt-templates-dylang](https://github.com/dylang/grunt-templates-dylang) on Sunday, April 5, 2015._
+_Generated using [grunt-readme](https://github.com/assemble/grunt-readme) with [grunt-templates-dylang](https://github.com/dylang/grunt-templates-dylang) on Tuesday, October 13, 2015._
 _To make changes to this document look in `/templates/readme/`
 

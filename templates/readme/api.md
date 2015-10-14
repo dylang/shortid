@@ -86,12 +86,12 @@ if both are generated in the exact same second and are generating the same numbe
 __Example__
 
 ```js
-shortId.seed(1000);
+shortid.worker(1);
 ```
 
 ---------------------------------------
 
-### `shortid.seed(float)`
+### `shortid.seed(integer)`
 
 __Default:__ `1`
 
@@ -108,6 +108,6 @@ If you are worried about users somehow decrypting the id then use it as a secret
 __Example__
 
 ```js
-shortId.seed(1000);
+shortid.seed(1000);
 ```
 
