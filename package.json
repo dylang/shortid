@@ -1,6 +1,6 @@
 {
   "name": "shortid",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "description": "Amazingly short non-sequential url-friendly unique id generator.",
   "main": "index.js",
   "scripts": {
