@@ -36,6 +36,7 @@
     "chai": "^3.3.0",
     "envify": "^3.4.0",
     "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
     "grunt-browserify": "^3.6.0",
     "grunt-contrib-concat": "^0.5.1",
     "grunt-contrib-jshint": "^0.11.3",
@@ -49,8 +50,5 @@
     "mocha": "^2.3.3",
     "time-grunt": "^1.2.1"
   },
-  "license": "MIT",
-  "dependencies": {
-    "grunt-cli": "^0.1.13"
-  }
+  "license": "MIT"
 }
