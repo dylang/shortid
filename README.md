@@ -96,7 +96,8 @@ Here are some other projects that use shortId:
 * [resume-generator](https://www.npmjs.org/package/resume-generator) - Resume Generator.
 * [riffmint](https://npmjs.org/package/riffmint) - Collaboration in musical space.
 * [rap1ds/dippa](https://github.com/rap1ds/dippa) - Dippa Editor – A web-based LaTeX editor
-
+* [sdgluck/fetch-sync](https://github.com/sdgluck/fetch-sync) - Proxy Fetch requests through the Background Sync API
+* [sdgluck/msgr](https://github.com/sdgluck/msgr) - Nifty service worker/client message utility
 
 
 
