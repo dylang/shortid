@@ -182,7 +182,7 @@ __Recommendation:__ You typically won't want to change this.
 __Optional__
 
 If you are running multiple server processes then you should make sure every one has a unique `worker` id. Should be an integer between 0 and 16. 
-If you do not do this there is very little chance of two servers generating the same id, but it is theatrically possible 
+If you do not do this there is very little chance of two servers generating the same id, but it is theoretically possible 
 if both are generated in the exact same second and are generating the same number of ids that second and a half-dozen random numbers are all exactly the same. 
 
 __Example__
