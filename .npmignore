@@ -5,3 +5,5 @@
 /browser/
 .jshintrc
 .travis.yml
+.npmignore
+Gruntfile.js
