@@ -2,6 +2,7 @@
 
 var shortid = require('..');
 var expect = require('chai').expect;
+var SPECIAL_CHARS = "-._~:/?#[]@!$&'()*+,;";
 
 describe('testing shortid', function(done) {
 
@@ -45,4 +46,17 @@ describe('testing shortid', function(done) {
 
         done();
     });
+    
+
+    it('should always end in alpha-numeric character', function(done){
+        shortid.characters("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQ"+SPECIAL_CHARS);
+        var i;
+        for (i=1; i < 5000; i++) {
+            var id = shortid.generate();
+            expect(id).to.not.be.empty;
+            expect(id).to.match(/[A-z]$/);
+        }
+        done();
+    });
+
 });
