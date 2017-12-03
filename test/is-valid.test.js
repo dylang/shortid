@@ -16,6 +16,7 @@ describe('testing is-valid', function() {
 
     it('should find these invalid', function(done) {
         expect(isValid('i have spaces')).to.equal(false);
+        expect(isValid('i have \n breaks \n of \n the \n lines')).to.equal(false);
         expect(isValid('abc')).to.equal(false);
         expect(isValid(1234)).to.equal(false);
         expect(isValid()).to.equal(false);
