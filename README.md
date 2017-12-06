@@ -122,7 +122,7 @@ users.insert({
 
 ---------------------------------------
 
-#### `characters(string)`
+#### `shortid.characters(string)`
 
 __Default:__ `'0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-_'`
 
@@ -153,7 +153,7 @@ shortid.characters('ⒶⒷⒸⒹⒺⒻⒼⒽⒾⒿⓀⓁⓂⓃⓄⓅⓆⓇⓈⓉ
 
 ---------------------------------------
 
-#### `isValid(id)`
+#### `shortid.isValid(id)`
 
 __Returns__ `boolean`
 
