@@ -29,14 +29,14 @@ ShortId creates amazingly short non-sequential url-friendly unique ids.  Perfect
 var shortid = require('shortid');
 
 console.log(shortid.generate());
-//PPBqWA9
+// PPBqWA9
 ```
 
 Mongoose Unique Id
 ```js
 _id: {
-    type: String,
-    'default': shortid.generate
+  'type': String,
+  'default': shortid.generate
 },
 ```
 
@@ -59,7 +59,7 @@ $ grunt build open
 
 ### Example
 
-```js
+```bash
 ~/projects/shortid ❯ node examples/examples.js
 eWRhpRV
 23TplPdS
@@ -102,7 +102,9 @@ Here are some other projects that use shortId:
 
 ### API
 
-`var shortid = require('shortid');`
+```js
+var shortid = require('shortid');
+```
 
 ---------------------------------------
 
@@ -114,10 +116,10 @@ __Example__
 
 ```js
 users.insert({
-    _id: shortid.generate()
-    name: ...
-    email: ...
-    });
+  _id: shortid.generate(),
+  name: '...',
+  email: '...'
+});
 ```
 
 ---------------------------------------
