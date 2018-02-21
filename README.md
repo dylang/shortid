@@ -96,7 +96,7 @@ Here are some other projects that use shortId:
 * [resume-generator](https://www.npmjs.org/package/resume-generator) - Resume Generator.
 * [riffmint](https://npmjs.org/package/riffmint) - Collaboration in musical space.
 * [rap1ds/dippa](https://github.com/rap1ds/dippa) - Dippa Editor – A web-based LaTeX editor
-
+* [jsonpool](https://npmjs.org/package/jsonpool) - JsonPool - A Secure api for storing json data
 
 
 
