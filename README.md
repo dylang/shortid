@@ -19,7 +19,7 @@ ShortId creates amazingly short non-sequential url-friendly unique ids.  Perfect
  * Apps can be restarted any number of times without any chance of repeating an id.
  * Popular replacement for Mongo ID/Mongoose ID.
  * Works in Node, io.js, and web browsers.
- * Includes [Mocha](http://visionmedia.github.com/mocha/) tests.
+ * Includes [Mocha](http://mochajs.org/) tests.
 
 
 
