@@ -50,5 +50,8 @@
     "mocha": "^2.3.3",
     "time-grunt": "^1.2.1"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "nanoid": "^1.0.5"
+  }
 }

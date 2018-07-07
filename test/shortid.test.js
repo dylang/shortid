@@ -26,23 +26,4 @@ describe('testing shortid', function(done) {
         }
         done();
     });
-
-    it('should decode worker', function(done){
-        shortid.worker(0);
-        expect(shortid.decode(shortid()).worker).to.equal(0);
-
-        shortid.worker(1);
-        expect(shortid.decode(shortid()).worker).to.equal(1);
-
-        shortid.worker(2);
-        expect(shortid.decode(shortid()).worker).to.equal(2);
-
-        shortid.worker(3);
-        expect(shortid.decode(shortid()).worker).to.equal(3);
-
-        shortid.worker(15);
-        expect(shortid.decode(shortid()).worker).to.equal(15);
-
-        done();
-    });
 });
