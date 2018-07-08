@@ -126,9 +126,9 @@ users.insert({
 
 __Default:__ `'0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-_'`
 
-__Returns__ new alphabet as a `string` 
+__Returns__ new alphabet as a `string`
 
-__Recommendation:__ If you don't like _ or -, you can to set new characters to use. 
+__Recommendation:__ If you don't like _ or -, you can to set new characters to use.
 
 __Optional__
 
@@ -181,9 +181,9 @@ __Recommendation:__ You typically won't want to change this.
 
 __Optional__
 
-If you are running multiple server processes then you should make sure every one has a unique `worker` id. Should be an integer between 0 and 16. 
-If you do not do this there is very little chance of two servers generating the same id, but it is theoretically possible 
-if both are generated in the exact same second and are generating the same number of ids that second and a half-dozen random numbers are all exactly the same. 
+If you are running multiple server processes then you should make sure every one has a unique `worker` id. Should be an integer between 0 and 16.
+If you do not do this there is very little chance of two servers generating the same id, but it is theoretically possible
+if both are generated in the exact same second and are generating the same number of ids that second and a half-dozen random numbers are all exactly the same.
 
 __Example__
 
@@ -203,7 +203,7 @@ __Optional__
 
 Choose a unique value that will seed the random number generator so users won't be able to figure out the pattern of the unique ids. Call it just once in your application before using `shortId` and always use the same value in your application.
 
-Most developers won't need to use this, it's mainly for testing ShortId. 
+Most developers won't need to use this, it's mainly for testing ShortId.
 
 If you are worried about users somehow decrypting the id then use it as a secret value for increased encryption.
 
@@ -248,8 +248,3 @@ Copyright (c) 2016 Dylan Greene, contributors.
 Released under the [MIT license](https://tldrlegal.com/license/mit-license).
 
 Screenshots are [CC BY-SA](http://creativecommons.org/licenses/by-sa/4.0/) (Attribution-ShareAlike).
-
-***
-_Generated using [grunt-readme](https://github.com/assemble/grunt-readme) with [grunt-templates-dylang](https://github.com/dylang/grunt-templates-dylang) on Sunday, April 3, 2016._
-_To make changes to this document look in `/templates/readme/`
-
