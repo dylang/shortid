@@ -2,6 +2,7 @@
 
 var shortid = require('..');
 var expect = require('chai').expect;
+var SPECIAL_CHARS = "-._~:/?#[]@!$&'()*+,;";
 
 describe('testing shortid', function(done) {
 
@@ -23,6 +24,7 @@ describe('testing shortid', function(done) {
             expect(id.length).to.be.below(17);
             ids[id] = ids[id] ? ids[id]++ : 1;
             expect(ids[id]).to.equal(1);
+            expect(id).to.match(/[a-zA-Z0-9]$/);
         }
         done();
     });
@@ -45,4 +47,6 @@ describe('testing shortid', function(done) {
 
         done();
     });
+    
+
 });
