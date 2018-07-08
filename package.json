@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "grunt build",
-    "test": "grunt test"
+    "test": "grunt test && size-limit"
   },
   "keywords": [
     "short",
@@ -46,6 +46,7 @@
     "grunt-release": "^0.14.0",
     "load-grunt-tasks": "^4.0.0",
     "mocha": "^5.2.0",
+    "size-limit": "^0.18.3",
     "time-grunt": "^1.2.1"
   },
   "license": "MIT"
