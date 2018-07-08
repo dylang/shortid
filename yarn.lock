@@ -3016,9 +3016,9 @@ nan@^2.9.2:
   version "2.10.0"
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.10.0.tgz#96d0cd610ebd58d4b4de9cc0c6828cda99c7548f"
 
-nanoid@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-1.0.5.tgz#4a45db5a53c02ae29188d6b136fbf069eecbd000"
+nanoid@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-1.0.7.tgz#23857a9514ae8efb7374221b923a2b92be3f74f2"
 
 nanomatch@^1.2.9:
   version "1.2.13"
