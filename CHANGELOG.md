@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 2.2.10
+* Fix theoretical ID limit length.
+
 ## 2.2.9
 * Fix symbols probability uniformity by using Nano ID (by @shashkovdanil).
 * Improve ID generation perfomance.
