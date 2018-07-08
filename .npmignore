@@ -9,3 +9,4 @@
 Gruntfile.js
 yarn.lock
 .size-limit
+.editorconfig
