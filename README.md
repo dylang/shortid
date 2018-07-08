@@ -96,7 +96,8 @@ Here are some other projects that use shortId:
 * [resume-generator](https://www.npmjs.org/package/resume-generator) - Resume Generator.
 * [riffmint](https://npmjs.org/package/riffmint) - Collaboration in musical space.
 * [rap1ds/dippa](https://github.com/rap1ds/dippa) - Dippa Editor – A web-based LaTeX editor
-
+* [react-planner](https://github.com/cvdlab/react-planner) - A React Component for plans design. Draw a 2D floorplan and navigate it in 3D mode.
+* [netcat](https://github.com/roccomuso/netcat) - Netcat client and server modules written in pure Javascript for Node.js.
 
 
 
