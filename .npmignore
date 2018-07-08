@@ -8,3 +8,4 @@
 .npmignore
 Gruntfile.js
 yarn.lock
+.size-limit
