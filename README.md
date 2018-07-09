@@ -20,6 +20,7 @@ ShortId creates amazingly short non-sequential url-friendly unique ids.  Perfect
  * Works in Node, io.js, and web browsers.
  * Includes [Mocha](http://mochajs.org/) tests.
 
+ShortId does not generate cryptographically secure ids, so don't rely on it to make IDs which are impossible to guess.
 
 
 ### Usage
