@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 2.2.11
+* Fix React Native support.
+
 ## 2.2.10
 * Fix theoretical ID limit length.
 
