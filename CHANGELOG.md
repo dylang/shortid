@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 2.2.12
+* Fix cluster worker ID for non-Node environments.
+
 ## 2.2.11
 * Fix React Native support.
 
