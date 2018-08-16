@@ -28,7 +28,7 @@
     "url": "https://github.com/dylang/shortid.git"
   },
   "browser": {
-    "./lib/random/random-byte": "./lib/random/random-byte-browser.js",
+    "./lib/random/random-byte.js": "./lib/random/random-byte-browser.js",
     "./lib/util/cluster-worker-id.js": "./lib/util/cluster-worker-id-browser.js"
   },
   "devDependencies": {
