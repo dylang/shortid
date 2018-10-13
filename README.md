@@ -26,7 +26,7 @@ ShortId does not generate cryptographically secure ids, so don't rely on it to m
 ### Usage
 
 ```js
-var shortid = require('shortid');
+const shortid = require('shortid');
 
 console.log(shortid.generate());
 // PPBqWA9
