@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 2.2.14
+* Reduce npm package size by `clean-publish`.
+
 ## 2.2.13
 * Fix `browser` config for webpack.
 
