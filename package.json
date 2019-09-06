@@ -18,15 +18,8 @@
     "shortid",
     "tinyid"
   ],
-  "homepage": "https://github.com/dylang/shortid",
-  "author": {
-    "name": "Dylan Greene",
-    "email": "dylang@gmail.com"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/dylang/shortid.git"
-  },
+  "author": "Dylan Greene <dylang@gmail.com>",
+  "repository": "dylang/shortid",
   "browser": {
     "./lib/random/random-byte.js": "./lib/random/random-byte-browser.js",
     "./lib/util/cluster-worker-id.js": "./lib/util/cluster-worker-id-browser.js"
