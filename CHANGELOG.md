@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 2.2.15
+* Update `REDUCE_TIME` to generate smaller ID.
+
 ## 2.2.14
 * Reduce npm package size by `clean-publish`.
 
