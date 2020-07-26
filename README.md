@@ -1,10 +1,10 @@
 ## shortid  [![Build Status](http://img.shields.io/travis/dylang/shortid.svg)](https://travis-ci.org/dylang/shortid) [![shortid](http://img.shields.io/npm/dm/shortid.svg)](https://www.npmjs.org/package/shortid)
 
+
+
 > Amazingly short non-sequential url-friendly unique id generator.
 
-
-
-
+## **shortid is deprecated, because the architecture is unsafe. we instead recommend [Nano ID](https://github.com/ai/nanoid/), which has the advantage of also being significantly faster than shortid**
 
 
 
