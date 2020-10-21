@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 2.2.16
+* Add deprecation notice to project readme (by Russell Dunphy).
+
 ## 2.2.15
 * Update `REDUCE_TIME` to generate smaller ID.
 
@@ -23,7 +26,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 * Fix symbols probability uniformity by using Nano ID (by @shashkovdanil).
 * Improve ID generation perfomance.
 * Fix `shortid.isValid` with custom alphabet.
-* Improve `shortid.isValid` perfomance (by @s7b5en).E
+* Improve `shortid.isValid` perfomance (by @s7b5en).
 
 ## 2.2.8
 * Clean npm package from unnecessary files.
