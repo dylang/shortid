@@ -1184,10 +1184,10 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
-clean-publish@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/clean-publish/-/clean-publish-1.1.2.tgz#545d723c556fda854bd37ddd7d46d994dab5983c"
-  integrity sha512-3DTmVkVS6Fp4RaXgvdkPgfd4YTWkkKXQ4xGS/Q6/FuMN5T45EuwDy4zcY171nV7ydVJ54bcO6RcZKf0qMjo0xQ==
+clean-publish@^1.1.8:
+  version "1.1.8"
+  resolved "https://registry.yarnpkg.com/clean-publish/-/clean-publish-1.1.8.tgz#e193233b489aad12976fb2a5f2166480346b0c46"
+  integrity sha512-1XcR5CRA1JkEJedUT9aFKEwbR33JvHY8Qm0ZgKk3JF7VStliaDJFuV96J3sf3bR/ZYt5P+c01DK6AQxI10a9Dw==
   dependencies:
     chalk "^2.4.1"
     cosmiconfig "^5.0.7"
