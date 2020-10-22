@@ -96,6 +96,7 @@ Here are some other projects that use shortId:
 * [resume-generator](https://www.npmjs.org/package/resume-generator) - Resume Generator.
 * [riffmint](https://npmjs.org/package/riffmint) - Collaboration in musical space.
 * [rap1ds/dippa](https://github.com/rap1ds/dippa) - Dippa Editor – A web-based LaTeX editor
+* [Pipcook](https://github.com/alibaba/pipcook) - A JavaScript application framework for machine learning and its engineering.
 
 
 
